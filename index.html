@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>防止溺水-安全游泳与溺水急救知识指南</title>
+    <meta name="description" content="提供全面的防溺水安全教育知识，包括预防措施、溺水识别、自救互救方法、急救步骤及常见问题解答，帮助公众提高水上安全意识，远离溺水危险。">
+    <meta name="keywords" content="防止溺水,防溺水,溺水自救,溺水急救,儿童防溺水,水上安全,游泳安全">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: #f4f9f9;
+            color: #2c3e50;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== Header ===== */
+        .site-header {
+            background: linear-gradient(135deg, #0a4d68, #088395);
+            color: #ffffff;
+            padding: 18px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            font-size: 2rem;
+            line-height: 1;
+        }
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .logo-sub {
+            font-size: 0.85rem;
+            opacity: 0.85;
+            margin-top: 2px;
+        }
+        .header-contact {
+            font-size: 0.9rem;
+            background: rgba(255,255,255,0.15);
+            padding: 8px 16px;
+            border-radius: 30px;
+        }
+
+        /* ===== Nav ===== */
+        .main-nav {
+            background-color: #ffffff;
+            border-bottom: 3px solid #0a4d68;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .nav-menu {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-menu li a {
+            display: block;
+            padding: 14px 24px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -3px;
+        }
+        .nav-menu li a:hover,
+        .nav-menu li a.active {
+            color: #088395;
+            border-bottom-color: #088395;
+            background-color: #f0fbfd;
+        }
+
+        /* ===== Hero 首屏 ===== */
+        .hero {
+            background: linear-gradient(120deg, #e0f2fe, #b8e4f0);
+            padding: 48px 0 56px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.6rem;
+            color: #0a4d68;
+            margin-bottom: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #1e5f74;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            background: #ffffffd9;
+            padding: 16px 28px;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            min-width: 140px;
+        }
+        .stat-item .num {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #c74b4b;
+        }
+        .stat-item .label {
+            font-size: 0.9rem;
+            color: #4a6a7a;
+        }
+
+        /* ===== 内容通用 ===== */
+        section {
+            padding: 44px 0;
+        }
+        .section-title {
+            font-size: 1.9rem;
+            color: #0a4d68;
+            text-align: center;
+            margin-bottom: 12px;
+            position: relative;
+            font-weight: 700;
+        }
+        .section-sub {
+            text-align: center;
+            color: #5a7a8a;
+            margin-bottom: 36px;
+            font-size: 1rem;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 28px 22px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            border-top: 5px solid #088395;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            color: #0a4d68;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #3d5a6c;
+        }
+
+        /* ===== 步骤区块 ===== */
+        .steps-section {
+            background-color: #ffffff;
+        }
+        .step-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .step-item {
+            background: #f0fbfd;
+            border-radius: 14px;
+            padding: 22px 18px;
+            flex: 1 1 200px;
+            max-width: 240px;
+            text-align: center;
+            border-left: 5px solid #c74b4b;
+        }
+        .step-num {
+            display: inline-block;
+            background: #0a4d68;
+            color: #fff;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .step-item h3 {
+            font-size: 1.1rem;
+            color: #0a4d68;
+        }
+        .step-item p {
+            font-size: 0.9rem;
+            color: #3d5a6c;
+        }
+
+        /* ===== 急救 ===== */
+        .emergency-box {
+            background: #fff5f5;
+            border: 2px solid #e74c3c;
+            border-radius: 18px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        .emergency-box h3 {
+            color: #c0392b;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+        .emergency-steps {
+            list-style: none;
+            padding: 0;
+        }
+        .emergency-steps li {
+            padding: 10px 0 10px 35px;
+            position: relative;
+            border-bottom: 1px dashed #e0b4b4;
+            font-size: 1rem;
+        }
+        .emergency-steps li::before {
+            content: "✔";
+            position: absolute;
+            left: 5px;
+            color: #c0392b;
+            font-weight: bold;
+        }
+        .emergency-steps li:last-child {
+            border-bottom: none;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-section {
+            background-color: #f4f9f9;
+        }
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 18px 24px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            cursor: pointer;
+            background: #ffffff;
+            border-left: 5px solid #088395;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            padding: 0 24px 20px;
+            color: #3d5a6c;
+            font-size: 0.95rem;
+            border-top: 1px solid #eef3f5;
+            padding-top: 16px;
+        }
+
+        /* ===== 资源列表 ===== */
+        .list-resource {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .list-resource h3 {
+            color: #0a4d68;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        .resource-item {
+            display: flex;
+            gap: 15px;
+            padding: 14px 0;
+            border-bottom: 1px solid #eef3f5;
+            align-items: flex-start;
+        }
+        .resource-item:last-child {
+            border-bottom: none;
+        }
+        .resource-icon {
+            font-size: 1.5rem;
+        }
+        .resource-content h4 {
+            font-size: 1rem;
+            color: #1e5f74;
+            margin-bottom: 4px;
+        }
+        .resource-content p {
+            font-size: 0.9rem;
+            color: #5a7a8a;
+        }
+
+        /* ===== 提示框 ===== */
+        .tip-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .tip-box {
+            background: #e8f6f3;
+            border-radius: 14px;
+            padding: 22px;
+            border-left: 6px solid #1abc9c;
+        }
+        .tip-box h4 {
+            color: #0e6655;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        .tip-box p {
+            font-size: 0.9rem;
+            color: #2c3e50;
+        }
+
+        /* ===== 页脚 ===== */
+        .site-footer {
+            background: #0a2a38;
+            color: #bcd8e0;
+            padding: 40px 0 20px;
+            margin-top: 20px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-col h4 {
+            color: #ffffff;
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+        .footer-col ul li a {
+            color: #bcd8e0;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            border-top: 1px solid #1a4a5a;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #8ab0bd;
+        }
+
+        /* ===== 响应式 ===== */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+            .hero-stats {
+                gap: 20px;
+            }
+            .nav-menu li a {
+                padding: 12px 16px;
+                font-size: 0.9rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .step-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            .step-item {
+                max-width: 100%;
+                width: 100%;
+            }
+            .header-inner {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 14px;
+            }
+            .hero {
+                padding: 30px 0 36px;
+            }
+            .stat-item {
+                min-width: 110px;
+                padding: 10px 14px;
+            }
+            .stat-item .num {
+                font-size: 1.5rem;
+            }
+            .emergency-box {
+                padding: 20px;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <span class="logo-icon">🏊</span>
+                <div>
+                    <div class="logo-text">防溺水安全网</div>
+                    <div class="logo-sub">珍爱生命 · 科学防溺</div>
+                </div>
+            </div>
+            <div class="header-contact">
+                📞 全国急救电话：120
+            </div>
+        </div>
+    </header>
+
+    <!-- 导航 -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#prevention" class="active">预防措施</a></li>
+                <li><a href="#identify">溺水识别</a></li>
+                <li><a href="#self-rescue">自救方法</a></li>
+                <li><a href="#rescue">互救与急救</a></li>
+                <li><a href="#children">儿童防护</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero 首屏 -->
+    <div class="hero">
+        <div class="container">
+            <h1>防止溺水，守护每一个生命</h1>
+            <p>溺水是造成意外死亡的重要原因之一，掌握科学的防溺水知识与技能，是保护自己与他人生命安全的关键。本指南系统介绍预防、识别、自救与急救方法。</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="num">90%</div>
+                    <div class="label">溺水事故可预防</div>
+                </div>
+                <div class="stat-item">
+                    <div class="num">4-6分钟</div>
+                    <div class="label">黄金救援时间</div>
+                </div>
+                <div class="stat-item">
+                    <div class="num">1</div>
+                    <div class="label">条核心原则：远离危险</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 预防措施 -->
+    <section id="prevention">
+        <div class="container">
+            <h2 class="section-title">预防溺水的核心措施</h2>
+            <p class="section-sub">预防永远胜于救援，从源头杜绝溺水风险</p>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🏊</div>
+                    <h3>选择正规场所</h3>
+                    <p>务必在配备救生员的正规游泳馆、海滨浴场活动，切勿在野外水库、河道、池塘等危险水域游泳或戏水。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👨‍👩‍👧</div>
+                    <h3>成人有效看护</h3>
+                    <p>儿童在水边活动时，家长必须保持近距离、不分心、不间断的看护，做到“伸手可及”。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🦺</div>
+                    <h3>正确使用救生装备</h3>
+                    <p>儿童、不习水性者应穿戴合格救生衣或游泳圈，并确认装备无破损、尺寸合适。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📋</div>
+                    <h3>学习游泳与自救</h3>
+                    <p>建议6岁以上儿童在专业教练指导下学习游泳，同时掌握踩水、仰漂等基础自救技能。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 溺水识别 -->
+    <section id="identify" style="background:#ffffff;">
+        <div class="container">
+            <h2 class="section-title">如何快速识别溺水</h2>
+            <p class="section-sub">溺水往往不是剧烈挣扎，而是无声而快速的</p>
+            <div class="list-resource">
+                <h3>⚠️ 溺水的典型表现</h3>
+                <div class="resource-item">
+                    <span class="resource-icon">🫁</span>
+                    <div class="resource-content">
+                        <h4>头部低于水面或嘴巴在水面起伏</h4>
+                        <p>溺水者通常无法呼救，头后仰、嘴巴张开，身体在水中直立，腿部几乎无蹬踏动作。</p>
+                    </div>
+                </div>
+                <div class="resource-item">
+                    <span class="resource-icon">🙅</span>
+                    <div class="resource-content">
+                        <h4>眼神呆滞或紧闭双眼</h4>
+                        <p>溺水者无法挥手求救，往往前倾或趴伏在水中，看似在玩水或潜水。</p>
+                    </div>
+                </div>
+                <div class="resource-item">
+                    <span class="resource-icon">🔇</span>
+                    <div class="resource-content">
+                        <h4>安静无声、无回应</h4>
+                        <p>真正的溺水者几乎无法发声，若有人呼叫无回应且状态异常，应立刻靠近确认。</p>
+                    </div>
+                </div>
+                <div class="resource-item">
+                    <span class="resource-icon">⏱️</span>
+                    <div class="resource-content">
+                        <h4>动作异常缓慢或垂直漂浮</h4>
+                        <p>溺水者常呈现“爬梯子”状或垂直上下浮动，应视为紧急情况。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 自救方法 -->
+    <section id="self-rescue">
+        <div class="container">
+            <h2 class="section-title">落水后如何自救</h2>
+            <p class="section-sub">保持冷静是自救的第一要诀</p>
+            <div class="step-list">
+                <div class="step-item">
+                    <span class="step-num">1</span>
+                    <h3>保持冷静</h3>
+                    <p>不要惊慌挣扎，慌乱会加速体力消耗并导致呛水。</p>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">2</span>
+                    <h3>仰漂呼吸</h3>
+                    <p>立即向后仰头，口鼻露出水面，双手缓慢划水，保持呼吸。</p>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">3</span>
+                    <h3>利用漂浮物</h3>
+                    <p>尽量抓住身边的木板、空瓶、泡沫等任何可漂浮物品。</p>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">4</span>
+                    <h3>保存体力</h3>
+                    <p>不要拼命游动，以最小消耗维持漂浮，等待救援。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 互救与急救 -->
+    <section id="rescue" style="background:#ffffff;">
+        <div class="container">
+            <h2 class="section-title">发现溺水者如何科学施救</h2>
+            <p class="section-sub">救援必须确保自身安全，避免盲目下水</p>
+            <div class="emergency-box">
+                <h3>🚨 岸上救援五步法（优先推荐）</h3>
+                <ul class="emergency-steps">
+                    <li><strong>大声呼救</strong>：立即呼叫周围人帮忙，并拨打120、110、119。</li>
+                    <li><strong>伸</strong>：利用竹竿、树枝、长棍等延伸物递给溺水者，趴低身体降低重心。</li>
+                    <li><strong>抛</strong>：将救生圈、水桶、空塑料瓶等漂浮物抛向溺水者。</li>
+                    <li><strong>划</strong>：若条件允许且受过训练，可划船或使用救生板靠近。</li>
+                    <li><strong>禁止</strong>：未成年人或未受过专业训练者切勿贸然下水，手拉手救人极危险。</li>
+                </ul>
+            </div>
+            <div class="emergency-box" style="border-color:#2980b9; background:#eaf4fb;">
+                <h3 style="color:#1a5276;">🆘 溺水者救上岸后的急救步骤</h3>
+                <ul class="emergency-steps" style="color:#1a5276;">
+                    <li><strong>判断意识与呼吸</strong>：轻拍双肩、大声呼喊，观察胸廓起伏，时间不超过10秒。</li>
+                    <li><strong>立即呼救</strong>：请旁人拨打120，同时开始心肺复苏。</li>
+                    <li><strong>开放气道</strong>：将溺水者仰卧，清理口鼻异物，抬颏仰头。</li>
+                    <li><strong>人工呼吸2次</strong>：捏住鼻子，吹气至胸廓隆起，每次约1秒。</li>
+                    <li><strong>胸外按压30次</strong>：按压部位为两乳头连线中点，深度5-6厘米，频率100-120次/分。</li>
+                    <li><strong>持续循环</strong>：按压与人工呼吸比例30:2，直至专业救援到达或患者恢复呼吸。</li>
+                </ul>
+                <p style="margin-top:16px; font-size:0.9rem; background:#fff; padding:10px; border-radius:8px; color:#555;"><strong>注意：</strong>不要控水（倒挂、挤压腹部），这会延误心肺复苏。尽快开始胸外按压和人工呼吸是关键。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 儿童防护 -->
+    <section id="children">
+        <div class="container">
+            <h2 class="section-title">儿童防溺水特别防护</h2>
+            <p class="section-sub">儿童是溺水事故的高发群体，需要加倍警惕</p>
+            <div class="tip-grid">
+                <div class="tip-box">
+                    <h4>🏠 家庭防护</h4>
+                    <p>家中的水桶、浴缸、水缸用后立即清空；给儿童洗澡时全程看护，不能离开。</p>
+                </div>
+                <div class="tip-box">
+                    <h4>🏫 安全教育</h4>
+                    <p>反复告知孩子“六不”原则：不私自下水、不擅自结伴游泳、不到无安全设施水域等。</p>
+                </div>
+                <div class="tip-box">
+                    <h4>🏖️ 场所选择</h4>
+                    <p>带孩子游泳务必选择有专业救生员、水质达标的场馆，并穿戴合身救生浮具。</p>
+                </div>
+                <div class="tip-box">
+                    <h4>📱 紧急联系</h4>
+                    <p>教会孩子认识救生标识，并牢记急救电话，紧急时大声呼救而非自己下水。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">关于防止溺水的常见问题</h2>
+            <p class="section-sub">解答大家最关心的防溺水疑问</p>
+            <div class="faq-item">
+                <div class="faq-question">❓ 游泳时抽筋了怎么办？</div>
+                <div class="faq-answer">立即停止游泳，仰面漂浮。若小腿抽筋，深吸一口气潜入水中，用手将脚趾向上扳，拉伸腓肠肌，同时呼叫同伴协助。平时游泳前做好热身并补充水分可有效预防抽筋。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">❓ 使用“跟屁虫”或游泳圈就一定安全吗？</div>
+                <div class="faq-answer">不一定。充气式游泳圈属于玩具，不是专业救生设备，可能漏气或滑脱。在开放水域或深水区，应穿戴通过认证的救生衣，且成人仍需近距离看护。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">❓ 溺水者救上来后需要先控水吗？</div>
+                <div class="faq-answer">不需要。控水(如倒背)会耽误宝贵的急救时间，且可能引起呕吐误吸。现代急救指南明确指出，应立即进行心肺复苏，优先人工呼吸与胸外按压。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">❓ 会游泳的人就不会溺水吗？</div>
+                <div class="faq-answer">不是。疲劳、水温过低、突发疾病、被水草缠绕或漩涡卷入都可能导致溺水。即使是游泳高手也应选择安全水域，并结伴而行。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">❓ 如何选择正规的游泳学习机构？</div>
+                <div class="faq-answer">建议选择有《高危险性体育项目经营许可证》的游泳馆，教练应持有救生员证和社会体育指导员证。报名前可试听课程，观察教练是否专业、教学是否循序渐进。</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>🚑 紧急求助</h4>
+                    <ul>
+                        <li>救护电话：120</li>
+                        <li>火警电话：119</li>
+                        <li>报警电话：110</li>
+                        <li>水上救援：12395</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>安全导航</h4>
+                    <ul>
+                        <li><a href="#prevention">预防溺水措施</a></li>
+                        <li><a href="#identify">识别溺水迹象</a></li>
+                        <li><a href="#self-rescue">落水自救方法</a></li>
+                        <li><a href="#rescue">岸上急救步骤</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>重点提示</h4>
+                    <ul>
+                        <li>未成年人禁止下水救人</li>
+                        <li>酒后、饭后不宜立即游泳</li>
+                        <li>雷雨天气远离水域</li>
+                        <li>开放水域务必穿戴救生衣</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>⚠️ 本网站内容仅供安全教育参考，不能替代专业急救培训。建议参加红十字会等机构举办的急救课程。</p>
+                <p style="margin-top:8px;">© 2024 防溺水安全知识网 | 珍爱生命 安全第一</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 交互
+        document.querySelectorAll('.faq-question').forEach(function(q) {
+            q.addEventListener('click', function() {
+                var answer = this.nextElementSibling;
+                if (answer.style.display === 'none' || answer.style.display === '') {
+                    answer.style.display = 'block';
+                } else {
+                    answer.style.display = 'none';
+                }
+            });
+        });
+        // 默认隐藏FAQ回答（除第一个外）
+        var answers = document.querySelectorAll('.faq-answer');
+        for (var i = 1; i < answers.length; i++) {
+            answers[i].style.display = 'none';
+        }
+        // 导航平滑滚动
+        document.querySelectorAll('.nav-menu a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+                          </html>
